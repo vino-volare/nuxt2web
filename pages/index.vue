@@ -5,26 +5,16 @@
             <h2>SOCIAL</h2>
             <div class="list">
                 <a class="link" href="https://twitter.com/VinoVolare" target="_blank">
-                    <img src="~/assets/img/Twitter social icons - square - white.svg" loading="lazy">
+                    <img width="150" height="auto" src="~/assets/img/Twitter social icons - square - white-reverse.svg" loading="lazy">
                 </a>
                 <a class="link" href="https://www.pixiv.net/users/24802125" target="_blank">
-                    <nuxt-img 
-                    src="v1653036064/website/static/logo_icon_euqxh2.png"
-                    sizes="xs:100px sm:150px"
-                    format="webp"
-                    provider="cloudinary"
-                    />
+                    <img width="150" height="auto" src="~/assets/img/pixiv_icon_white.svg" loading="lazy">
                 </a>
                 <a class="link" href="https://www.youtube.com/channel/UCP-bXu2xtY2GqDdAKk_ys4w" target="_blank">
-                    <nuxt-img 
-                    src="v1653602193/website/static/youtube_social_square_dark_geudg8.png"
-                    sizes="xs:100px sm:150px"
-                    format="webp"
-                    provider="cloudinary"
-                    />
+                    <img width="150" height="auto" src="~/assets/img/yt_icon_rgb.svg" loading="lazy">
                 </a>
                 <a class="link" href="https://www.twitch.tv/tokino_ch" target="_blank">
-                    <img src="~/assets/img/TwitchGlitchWhite.svg" loading="lazy">
+                    <img width="150" height="auto" src="~/assets/img/TwitchGlitchWhite.svg" loading="lazy">
                 </a>
             </div>
         </nav>

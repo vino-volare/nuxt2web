@@ -14,6 +14,7 @@ export default {
 main{
     flex: 1;
     background-color: rgb(32, 32, 32);
+    padding-top: 16px;
 }
 h1{
     text-align: center;

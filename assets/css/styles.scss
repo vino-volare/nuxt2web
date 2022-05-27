@@ -1,18 +1,14 @@
 @font-face{
-    font-family: 'F1Black';
-    src: url('../fonts/Formula1-Black.ttf') format("truetype");
-}
-@font-face{
     font-family: 'F1Bold';
-    src: url('../fonts/Formula1-Bold.ttf') format("truetype");
+    src: url('../fonts/Formula1-Bold.woff2') format("woff2");
 }
 @font-face{
     font-family: 'F1Regular';
-    src: url('../fonts/Formula1-Regular.ttf') format("truetype");
+    src: url('../fonts/Formula1-Regular.woff2') format("woff2");
 }
 @font-face{
     font-family: 'F1Wide';
-    src: url('../fonts/Formula1-Wide.ttf') format("truetype");
+    src: url('../fonts/Formula1-Wide.woff2') format("woff2");
 }
 *{
     margin: 0;

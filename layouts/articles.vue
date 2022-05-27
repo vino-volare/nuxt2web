@@ -8,6 +8,15 @@
     </div>
 </template>
 <script>
+export default {
+    head:{
+        title: 'comming soon',
+        titleTemplate: '%s - Tokino Vino',
+        meta:[
+            {name: 'robots', content: 'none'}
+        ]
+    }
+}
 </script>
 <style scoped>
     div{

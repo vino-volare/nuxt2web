@@ -11,8 +11,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'アマチュアイラストレーター' },
+      { hid: 'keywords', name: 'keywords', content:'ときの,ビーノ,tokino,vino,イラスト,イラストレーター,ダンスミュージック,ストリート'},
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'TokinoVino'},
+      { hid: 'og:type', property: 'og:type', content: 'website'},
+      { hid: 'og:title', property: 'og:title', content: 'TokinoVino'},
+      { hid: 'og:url', property: 'og:url', content: 'https://vinovolare.com'},
+      { hid: 'og:description', property: 'og:description', content: 'アマチュアイラストレーター'},
+      { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/tokino/image/upload/v1653632269/website/static/TokinoVino_ogp_dgq6m5.jpg'},
+      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:site', content: '@vinovolare'},
+      {name: 'twitter:creator', content: '@vinovolare'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
