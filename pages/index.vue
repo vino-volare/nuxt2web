@@ -5,18 +5,26 @@
             <h2>SOCIAL</h2>
             <div class="list">
                 <a class="link" href="https://twitter.com/VinoVolare" target="_blank">
-                    <img src="~/assets/img/Twitter social icons - square - blue.svg" loading="lazy">
+                    <img src="~/assets/img/Twitter social icons - square - white.svg" loading="lazy">
                 </a>
                 <a class="link" href="https://www.pixiv.net/users/24802125" target="_blank">
-                    <img :src="pixivSrc"
-                    loading="lazy">
+                    <nuxt-img 
+                    src="v1653036064/website/static/logo_icon_euqxh2.png"
+                    sizes="xs:100px sm:150px"
+                    format="webp"
+                    provider="cloudinary"
+                    />
                 </a>
                 <a class="link" href="https://www.youtube.com/channel/UCP-bXu2xtY2GqDdAKk_ys4w" target="_blank">
-                    <img :src="youtubeSrc"
-                    loading="lazy">
+                    <nuxt-img 
+                    src="v1653602193/website/static/youtube_social_square_dark_geudg8.png"
+                    sizes="xs:100px sm:150px"
+                    format="webp"
+                    provider="cloudinary"
+                    />
                 </a>
                 <a class="link" href="https://www.twitch.tv/tokino_ch" target="_blank">
-                    <img src="~/assets/img/TwitchGlitchPurple.svg" loading="lazy">
+                    <img src="~/assets/img/TwitchGlitchWhite.svg" loading="lazy">
                 </a>
             </div>
         </nav>
@@ -26,24 +34,6 @@
 <script>
 export default {
   layout: 'home',
-    data(){
-      return{
-          pixivSrc: this.$cloudinary.image.url(
-              'website/static/logo_icon_euqxh2.png',
-              {
-                  quality: 'auto',
-                  width: '150',
-              }
-          ),
-          youtubeSrc: this.$cloudinary.image.url(
-            'website/static/youtube_social_square_red_fn8a06.png',
-            {
-              quality: 'auto',
-              width: '150',
-            }
-          )
-      }
-  }
 }
 </script>
 

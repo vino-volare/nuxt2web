@@ -16,8 +16,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', type: 'image/png', href: 'https://res.cloudinary.com/tokino/image/upload/v1653465182/website/static/icon-192x192_oudco0.png' },
-      { rel: 'icon', type: 'apple-touch-icon', href: 'https://res.cloudinary.com/tokino/image/upload/v1653465095/website/static/apple-touch-icon-180x180_z7uaza.png' }
+      { rel: 'icon', sizes: '192x192', type: 'image/png', href: 'https://res.cloudinary.com/tokino/image/upload/v1653465182/website/static/icon-192x192_oudco0.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', type: 'image/png', href: 'https://res.cloudinary.com/tokino/image/upload/v1653465095/website/static/apple-touch-icon-180x180_z7uaza.png' }
     ]
   },
 
@@ -35,20 +35,28 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/cloudinary',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  cloudinary: {
-    cloudName: process.env.CLOUDNAME,
-    apiKey: process.env.API_KEY,
-    apiSecret: process.env.API_SECRET,
-    useComponent: true
+  image: {
+    screens: {
+      xs: 400,
+      sm: 600,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/tokino/image/upload/'
+    }
   }
 }

@@ -1,7 +1,15 @@
 <template>
     <div>
         <header>
-            <img class="bg" :src="src" loading="lazy">
+            <nuxt-img 
+            class="bg" 
+            src="v1653030180/website/static/%E3%81%B0%E3%81%A3%E3%81%A6%E3%82%93%E6%98%9F%E5%B7%9D_%E5%AE%8C%E6%88%90%E5%93%81_%E8%89%B2%E5%8F%8E%E5%B7%AEver_wgxmcn.png" 
+            width="1200"
+            height="1600"
+            sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
+            provider="cloudinary"
+            format="webp"
+            />
             <h1 class="title">Tokino Vino<img src="~/assets/img/TokinoVino_word_only.svg" loading="lazy"></h1>
             <TheHeader />
         </header>
@@ -10,18 +18,6 @@
     </div>
 </template>
 <script>
-export default {
-    data(){
-        return{
-            src: this.$cloudinary.image.url(
-                'website/static/%E3%81%B0%E3%81%A3%E3%81%A6%E3%82%93%E6%98%9F%E5%B7%9D_%E5%AE%8C%E6%88%90%E5%93%81_%E8%89%B2%E5%8F%8E%E5%B7%AEver_wgxmcn.png',
-                {
-                    quality: 'auto',
-                }
-            )
-        }
-    }
-}
 </script>
 <style scoped>
     div{
