@@ -5,7 +5,7 @@
             <NuxtLink to="/contact" class="menu">contact</NuxtLink>
         </div>
         <NuxtLink class="home" to="/">
-            <img height="100px" width="auto" src="~/assets/img/TokinoVino_white.svg" loading="lazy" />
+            <img height="100px" width="auto" src="~/assets/img/TokinoVino_white.svg" />
         </NuxtLink>
     </nav>
 </template>
